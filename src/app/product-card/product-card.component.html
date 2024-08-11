@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title >Catracho-Pizza</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Catracho Pizza App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <img [src]="product.image" alt="{{ product.title }}" />
+
+      <ion-card-header >
+        <ion-card-title class="ion-text-center" color="danger" style="font-size:1.5em">{{ product.title }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <span>{{ product.description }}</span>
+        <p><strong style="font-size:1em">DESDE: </strong>  <span style="color: red;"> Lps. {{ product.price }}</span></p>
+        <div>
+         <strong>CANTIDAD:</strong> 
+          <ion-button shape="round" color="medium" size="small" (click)="decrementarCantidad()">-</ion-button>
+          <span >{{ cantidad }}</span>
+          <ion-button shape="round" color="medium" size="small" (click)="incrementarCantidad()">+</ion-button> 
+        </div>
+       <div class="ion-text-end" >
+          <ion-button class="ion-text-end"  size="small" color="success" (click)="ordenProduct()" class="ion-text-end">Ordenar</ion-button>
+      </div>
+      
+      </ion-card-content>
+
+    </ion-card>
+  </div>
+</ion-content>
+ 
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+#product-card .ion-card-title {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    .ion-text-center {
+      text-align: center;
+      font-style:inherit;
+    }
+  }
+  
+
+#ion-button .ion-text-end {
+    align-items: right;
+  }
+  
